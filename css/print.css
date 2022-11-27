@@ -1,0 +1,35 @@
+/* Drucker brauchen ganz andere CSS angaben als Bildschirme. Aus diesem Grund
+   haben wir für diese auch eine eigene CSS Datei. */
+
+body {
+ background: white;
+ color: black;
+ font-family: georgia, "Times New Roman", Times serif; /* Drucker sollten alles mir einer Schriftart mit Serifen drucken, da diese auf dem Papier wesentlich leichter zu lesen ist. Schriftarten mit Serifen sind zum Beispiel Georgia, Times New Roman. Am ende sollte immer die Schriftfamilie hier mit Serifen: "serif" stehen. */
+}
+#logo {
+ text-align: right;
+ line-height: 0.8em;
+ font-size: 3em;
+ font-family: verdana, arial, sans-serif; /* Da das Logo ähnlich wie auf dem Bildschirm aussehen soll nehmen wir hier auch die gleiche Schriftart. */
+ letter-spacing: -3px;
+}
+#logo a {
+ text-decoration: none; /* Hier lassen wir den Unterstrich weg. */
+}
+.skip, #subnav, #menu { /* Wenn sich jemand eine Seite aus dem Internet ausdruckt dann will er mit hoher Wahrscheinlichkeit den Inhalt drucken und nicht das Menü oder sonstige angaben die für die Navigation auf dem Bildschirm gedacht sind. Deshalb lassen wir diese vom Papier verschwinden. Das spart auch viel Paphier und Tinte. */
+ display: none;
+}
+#main a:link:after, #main a:visited:after { /* Auf dem gedruckten Blatt papier kann man keinen Link klicken. Deshalb drucken wir den gesammten URL dieses Links dahinter an. Dies funktioniert allerdings nicht im IE. Wer mehr zu diesem Thema wissen will sei auf <http://www.alistapart.com/articles/goingtoprint/ verwiesen.> */
+   content: " (" attr(href) ") ";
+   font-size: 0.9em; }
+#main a[href^="/"]:after { /* Der Mozilla/Firefox zeigen, im gegen satz zum Opera, die Domain nicht von selbst an. Hier müssen wir mittels CSS3, welches er schon zum Teil versteht, nachhelfen. */
+ content: " (http://example.org" attr(href) ") ";
+}
+.fright { /* Damit die Fließeigenschaften auch beim Drucken beachtet werden. */
+ float: right;
+ margin: 0 0 1em 1em;
+}
+.fleft {
+ float: left;
+ margin: 0 1em 1em 0;
+}

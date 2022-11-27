@@ -1,0 +1,36 @@
+/* Da der Internet Explorer schon sehr alt ist versteht er einige Angaben des
+   orginal CSS nicht. Hier versuchen wir ihm mit zusätzlichem CSS auf die Sprünge
+   zu helfen. */
+
+/* Max-Width für den IE 5+6 mit Hilfe von JavaScript simulieren */
+div#container {
+ width: 750px; /* Falls JavaScript ausgeschalten ist wird dieser feste Wert verwendet */
+ width:expression(document.body.clientWidth>905?"900px":"auto");
+}
+
+/* Ein Workaround für den IE <=6, der kein margin: auto; zum Zentrieren der Seite versteht. */
+body { /* durch das zentrieren des Body erreichen wir dass auch container zentriert ist. */
+ text-align: center;
+}
+#container { /* Jetzt müssen wir alles innerhalb des Containers wieder linksbündig machen. */
+ text-align: left;
+}
+
+/* Logo im IE 5+6 nicht abschneiden lassen */
+#logo {
+ line-height: 63px;
+}
+
+/* Menü anpassen für den IE 5.0x */
+html + body #menu {
+ height: 1.3em;
+}
+html + body #menu li {
+ display: block;
+ float: left;
+}
+
+/* Abstände bei der Subnavigation bei IE 5+6 anpassen */
+#subnav {
+ padding-left: 10px;
+}
