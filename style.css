@@ -109,7 +109,7 @@ span {
 
 @media only screen and (max-width: 492px) {
   body header {
-    width: 200%;
+    width: 210%;
     height: 10rem;
   }
   .content {
