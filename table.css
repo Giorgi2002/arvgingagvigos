@@ -19,6 +19,7 @@ body {
 .table tbody tr td {
   vertical-align: middle;
   border: none;
+  text-align: center;
 }
 .table thead tr th:nth-last-child(1),
 .table thead tr td:nth-last-child(1),
@@ -41,13 +42,13 @@ body {
 }
 
 .user-info {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 .user-info__img img {
   margin-right: 15px;
-  height: 55px;
-  width: 55px;
+  width: 80px;
+  height: 80px;
   border-radius: 45px;
   border: 3px solid #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -79,6 +80,14 @@ th {
   transition: 0.2s;
   cursor: pointer;
 }
-.anath {
-  text-align: center;
+
+tr {
+  font-size: 1.2em;
+}
+a {
+  text-decoration: none;
+}
+
+tbody {
+  overflow: scroll;
 }
