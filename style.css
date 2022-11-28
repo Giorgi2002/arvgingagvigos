@@ -86,7 +86,8 @@ span {
   justify-content: center;
   margin-top: 3rem;
   position: relative;
-  right: 4rem;
+  bottom: 7rem;
+  right:  4rem;
 }
 .content {
   display: flex;
