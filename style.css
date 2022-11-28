@@ -40,8 +40,8 @@ body header {
   height: 100%;
   display: flex;
   width: 10rem;
-  margin-left: 5rem;
-  justify-content: Margin right;
+  margin-right: 5rem;
+  justify-content: center;
   align-items: center;
 }
 .score {
