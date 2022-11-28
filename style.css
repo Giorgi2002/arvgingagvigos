@@ -84,9 +84,9 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 4rem;
+  margin-top: 3rem;
   position: relative;
-  bottom: 7rem;
+  right: 4rem;
 }
 .content {
   display: flex;
