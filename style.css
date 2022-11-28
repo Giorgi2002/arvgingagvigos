@@ -116,10 +116,3 @@ span {
     width: 80%;
   }
 }
-
-@media screen and (max-width: 300px) {
-    body {
-        width: 80%;
-        font-size: 15px;
-    }
-}
