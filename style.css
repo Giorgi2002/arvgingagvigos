@@ -28,7 +28,7 @@ body header {
   font-size: 3em;
   color: #ffffff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
-    0 0 30px #49ff18, 0 0 40px #253022, 0 0 55px #519c3c, 0 0 75px #52684c;
+  0 0 30px #49ff18, 0 0 40px #253022, 0 0 55px #519c3c, 0 0 75px #52684c;
   cursor: pointer;
 }
 
@@ -55,18 +55,14 @@ body header {
   justify-content: center;
   align-items: center;
   border-radius: 28px;
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 .score h1,
 span {
   font-size: 1.9em;
-  color: #ffffff;
-  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
-    #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
-    #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+  color: #FFFFFF;
+text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
 .score span {
   font-size: 1.6em;
@@ -97,7 +93,8 @@ span {
 .content {
   display: flex;
   width: 70%;
-}
+ 
+ }
 
 @media only screen and (max-width: 700px) {
   body header {
@@ -121,9 +118,9 @@ span {
   .content {
     width: 80%;
   }
-  .content {
+  .content{
     display: flex;
     width: 70%;
-    margin-right: 2.5rem;
+    margin-right:1.9rem;
   }
 }
