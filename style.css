@@ -15,7 +15,8 @@ body {
 body header {
   width: 100%;
   height: 10rem;
-  background: linear-gradient(#e66465, #9198e5);
+  background-color: #2e3033;
+  background-image: #e66465, #9198e5);
   display: flex;
   align-items: center;
   padding: 1rem;
