@@ -1,8 +1,10 @@
 "use strict";
 const box = document.querySelectorAll(".btn");
-const hide = document.querySelectorAll(".btn-alive");
+const hide = document.querySelector(".btn-alive");
 
-if (box.textContent == "მკვდარი") {
-  box.classList.remove("btn-alive");
-  box.classList.add("btn-dead");
+for (let i = 0; i < box.length; i++) {
+  if (box[i].textContent == "მკვდარი") {
+    box[i].classList.remove("btn-alive");
+    box[i].classList.add("btn-dead");
+  }
 }
