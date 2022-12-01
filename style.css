@@ -1,3 +1,8 @@
+@font-face {
+  font-family: myFont;
+  src: url(Doctor\ Drake.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +20,12 @@ body {
 body header {
   width: 100%;
   height: 10rem;
-  background-color: #2e3033;
+  background: rgb(2, 2, 5);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 2, 5, 1) 0%,
+    rgba(38, 7, 11, 1) 19%
+  );
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -26,9 +36,11 @@ body header {
 }
 .header-name {
   font-size: 3em;
+  font-family: myFont;
   color: #ffffff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
-    0 0 30px #49ff18, 0 0 40px #253022, 0 0 55px #519c3c, 0 0 75px #52684c;
+  text-shadow: 0 0 5px #ffffff33, 0 0 10px rgba(255, 255, 255, 0.288),
+    0 0 15px rgba(255, 255, 255, 0.171), 0 0 20px #151814, 0 0 30px #2f382d,
+    0 0 40px #253022, 0 0 55px #519c3c, 0 0 75px #52684c;
   cursor: pointer;
 }
 
