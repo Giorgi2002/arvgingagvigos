@@ -98,6 +98,9 @@ span {
   display: flex;
   width: 70%;
 }
+.score .zero .txutmet {
+  font-size: 1.6rem;
+}
 
 @media only screen and (max-width: 700px) {
   body header {
