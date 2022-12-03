@@ -115,7 +115,7 @@ span {
 }
 
 .score {
-  animation: wiggle 3s linear infinite;
+  animation: wiggle 10s linear infinite;
 }
 
 @keyframes wiggle {
